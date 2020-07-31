@@ -107,14 +107,15 @@ func Provider() terraform.ResourceProvider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"dns_a_record_set":    resourceDnsARecordSet(),
-			"dns_aaaa_record_set": resourceDnsAAAARecordSet(),
-			"dns_cname_record":    resourceDnsCnameRecord(),
-			"dns_mx_record_set":   resourceDnsMXRecordSet(),
-			"dns_ns_record_set":   resourceDnsNSRecordSet(),
-			"dns_ptr_record":      resourceDnsPtrRecord(),
-			"dns_srv_record_set":  resourceDnsSRVRecordSet(),
-			"dns_txt_record_set":  resourceDnsTXTRecordSet(),
+			"dns_a_record_set":     resourceDnsARecordSet(),
+			"dns_aaaa_record_set":  resourceDnsAAAARecordSet(),
+			"dns_cname_record":     resourceDnsCnameRecord(),
+			"dns_mx_record_set":    resourceDnsMXRecordSet(),
+			"dns_ns_record_set":    resourceDnsNSRecordSet(),
+			"dns_ptr_record":       resourceDnsPtrRecord(),
+			"dns_srv_record_set":   resourceDnsSRVRecordSet(),
+			"dns_txt_record_set":   resourceDnsTXTRecordSet(),
+			"dns_sshfp_record_set": resourceDnsSSHFPRecordSet(),
 		},
 
 		ConfigureFunc: configureProvider,
